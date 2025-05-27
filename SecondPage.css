@@ -1,0 +1,55 @@
+.SecondPage {
+  /* Your existing rules */
+  background-image: url('../Components/img1.jpg'); /* Adjust this path based on where img1.jpg is relative to SecondPage.css */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 80vh; /* Using 80vh for better responsiveness across screen heights */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers items horizontally within the flex container */
+  justify-content: center; /* Centers items vertically within the flex container */
+  color: white; /* Default text color for this section if background is dark */
+  padding-bottom: 5rem; /* Add some padding at the bottom for spacing with next section */
+
+  /* Your new rules for .SecondPage */
+  width: 80%; /* Applied directly as requested */
+  /* min-height: 300px; - This is now superseded by min-height: 80vh for potentially better responsiveness */
+  border-radius: 4rem; /* Applied directly as requested */
+
+  /* To ensure the content inside respects the border-radius, similar to how navbar works */
+  overflow: hidden;
+}
+
+/* Specific styling for the "Our Amazing Products" button if it's on a dark background */
+.SecondPage .btn-light {
+    /* Your new rules for .btn-light */
+    margin: 4rem 0 1rem 0 !important; /* Used !important to ensure it overrides Bootstrap's utility classes */
+    color: #62d6f7; /* Applied directly as requested */
+
+    /* Existing styles for consistency */
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    border-color: rgba(255, 255, 255, 0.5); /* Lighter border */
+    /* Removed redundant color: white; here as your specified color is taking precedence */
+}
+
+/* Ensure headings and paragraphs inside SecondPage are white if background is dark */
+.SecondPage h1,
+.SecondPage p {
+  color: white;
+}
+
+/* Your new rules for .card */
+.card {
+  border-radius: 2rem !important; /* Used !important to override Bootstrap's default rounded classes (like rounded-4) */
+}
+
+/* Your new rules for .btn2 (this targets the "Get Started" buttons inside the cards) */
+.btn2 {
+  width: 80% !important; /* Used !important to override Bootstrap's w-75 utility class on the button */
+}
+
+/* Custom background color for the specific dark card if not perfectly covered by bg-dark */
+.custom-dark-card {
+  background-color: #1a233b !important;
+}

@@ -1,0 +1,22 @@
+/* Footer.css */
+
+.footer-section {
+    border-top: 1px solid #e9ecef; /* A very light grey border at the top, if desired */
+    background-color: #d8d8d8; /* Explicitly set white background */
+}
+
+.footer-section .text-muted {
+    color: #6c757d !important; /* Ensure Bootstrap's text-muted is consistently applied or customize */
+}
+
+/* Custom styling for input placeholder color if needed (not strictly in image, but common) */
+.footer-section .form-control::placeholder {
+    color: #adb5bd; /* Lighter grey for placeholder */
+    opacity: 1; /* Ensure placeholder is not transparent */
+}
+
+/* Adjust button height or padding if needed to match image exactly */
+.footer-section .btn-primary {
+    padding-top: 0.75rem; /* Example: adjust padding for button height */
+    padding-bottom: 0.75rem; /* Example: adjust padding for button height */
+}
